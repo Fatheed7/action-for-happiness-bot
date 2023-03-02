@@ -30,8 +30,10 @@ async def action(interaction: Interaction):
     now = datetime.now()
     # Return current day
     day = now.strftime("%d")
-    # Return current month
-    month = now.strftime("%b")
+    # Return current month (short form)
+    month = now.strftime("%b").upper()
+    # Return current month name in full
+    month_name = now.strftime("%B")
     # Return current month number
     month_number = now.strftime("%m")
     # Return current year
@@ -40,11 +42,11 @@ async def action(interaction: Interaction):
     image_url = (
         "https://actionforhappiness.org/sites/default/files/styles/"
         "daily_message_convo_overlay/public/AFH_ACTION_"
-        + year + "_" + month_number + "_" + month.upper() + "_" + day + ".png")
+        + year + "_" + month_number + "_" + month + "_" + day + ".png")
     # Trying Sending Image in Embed
     try:
         embed = nextcord.Embed(
-            title="Daily Action for " + now.strftime("%B") + " " + day + ", " + year,
+            title="Daily Action for " + month_name + " " + day + ", " + year,
             color=nextcord.Color.blue()
         )
         embed.set_image(
