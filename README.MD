@@ -23,7 +23,7 @@ Your env.py file will require two main bits of information:
 - A Discord Bot Token.
 - The ID of the server the bot is to be used on.
 
-Please populate the env.py with these details like so:
+Please populate the env.py with these details:
 
 ```
 import os
