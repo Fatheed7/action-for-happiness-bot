@@ -6,8 +6,6 @@ Gets the daily action from the [Action for Happiness website](https://actionforh
 
 ## Installation
 
----
-
 Run the following command to install required packages.
 
 ```
@@ -35,8 +33,6 @@ os.environ['SERVER_ID'] = 'YOUR_DISCORD_SERVER_ID_HERE'
 ```
 
 ## Running the Bot
-
----
 
 If your details have been added successfully you can run the bot with the command:
 
@@ -76,3 +72,5 @@ The bot should be given:
 The bot can be used by typing the slash command /action into the chat.
 
 It will then respond with the daily image within an embed, or an error message if the embed cannot be found.
+
+---
